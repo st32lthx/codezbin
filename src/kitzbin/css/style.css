@@ -1,0 +1,150 @@
+html{
+	background-color: #000;
+}
+body{
+	font-family: 'Courier', arial;
+	margin: 0;
+	/*background-image: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/dark_mosaic.png');
+	*/
+	background-color: #000;
+	color: white;
+}
+
+
+#topnav{
+
+padding: 20px;
+background-image:url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/micro_carbon.png');
+font-size:1.06em;
+color:#204E6B;
+}
+
+#topnav ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+#topnav ul li { display: inline; }
+
+#topnav ul li a
+{
+font-family: 'Courier',arial;
+font-size:1.06em;
+color:#204E6B;
+letter-spacing:0.1em;
+text-decoration:none;
+padding: .1em  .7em .1em .7em;
+
+}
+
+#topnav ul li a:hover{
+	color: #005FF7;
+}
+a {
+   outline: 0;
+}
+
+
+.top{
+	height: 1px;
+	background-color: #ccc;
+}
+
+
+h1{
+	font-size: 2em;
+}
+
+.snippet_container li{
+font-weight: bold;
+padding: 10px 10px 10px 20px;
+border-bottom: 1px solid #2A3740;
+color: #666; 
+list-style: none;
+}
+
+.snippet-trigger{
+	text-decoration: none;
+
+	color: #2A3740;
+	font-size: 1em;
+	margin-bottom: 50px;
+}
+
+.snippet-trigger:hover{
+color: #204E6B;
+}
+
+.snippet_trigger_active{color: #005FF7;}
+/*.snippet_trigger_bg_active{background-color: #ddd;}*/
+/*.snippet_container li:hover{background-color: #ddd;}*/
+
+#expand_collapse_container{
+
+position: fixed;
+left: 850px;
+top: 10px;
+	width: 160px;
+	height: 20px;
+
+	float: left;
+	margin-right: 25px;
+	clear: right;
+}
+
+#expand_collapse{
+	color: #204E6B;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+#expand_collapse:hover{
+	color: #005FF7;
+}
+
+
+
+
+#toggle_autoexpand{
+	color: #204E6B;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+#toggle_autoexpand:hover{
+	color: #005FF7;
+}
+
+	
+#content{
+
+	width: 800px;
+	height: auto;
+	overflow: hidden;
+
+}
+
+#centercontent{
+	
+	width: 500px;
+	height: 200px;
+	margin: 0 auto;
+	color: #204E6B;
+	text-align: center;
+	padding-top: 200px;
+}
+
+#footer{
+	height: 250px;
+	color: gray;
+}
+
+/*
+.snippet_container li:before{
+    	 content:"·";
+        font-size:2em;
+        vertical-align:middle;
+        line-height:20px;
+
+    }​
+*/
