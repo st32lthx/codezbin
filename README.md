@@ -2,12 +2,12 @@ Codezbin
 =============
 Codezbin.src
 -------------
-#content
+# content
 some content goes here
-*something
-**some other thing
-##content
-###more content
+* something
+** some other thing
+## content
+### more content
 1.some number
 2.another number
 
