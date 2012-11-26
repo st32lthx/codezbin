@@ -8,13 +8,10 @@ import auxclasses.Economy;
 public class Webhost {
 
 	private IPlan _plan;
-	private final IPlan _business;
-	private final IPlan _economy;
 
 	public Webhost(String plan) {
-		_business = new Business();
-		_economy = new Economy();
-		_plan = (isBusiness(plan)) ? _business : _economy;
+
+		_plan = (isBusiness(plan)) ? new Business() :new Economy();
 	}
 
 	public int getPrice() {
