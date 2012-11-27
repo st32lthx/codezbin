@@ -1,4 +1,4 @@
-#1. Interfaces
+#1. Interfaces.
 A series of examples of interface usages.
 
 + __1.1-interface-marble-box__ explores a very simple example of interface usage. The example abstracts a very physical situation.
