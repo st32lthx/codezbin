@@ -7,4 +7,4 @@ car.gas = 22
 car.mile= 55
 puts "Now.. gas: #{car.gas} mile: #{car.mile}"
 
-puts Car.count
+puts Car.count ##calling the class method
