@@ -4,4 +4,4 @@
 
 2 - Class attributes
 
-3 - Class methods and class attributes 
+3 - Class methods 
