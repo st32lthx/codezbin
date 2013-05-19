@@ -1,4 +1,4 @@
-require_relative 'Car'
+require_relative 'Car.rb'
 
 car = Car.new(20,50)
 puts "gas: #{car.get_gas} mile: #{car.get_mile}"

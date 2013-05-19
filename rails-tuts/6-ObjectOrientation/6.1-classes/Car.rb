@@ -1,4 +1,6 @@
 class Car
+
+	
 	def initialize (gas,mile)
 
 		@gas = gas
