@@ -1,0 +1,9 @@
+<tr id="<%= dom_id entry %>">
+  <td><%= entry.name %></td>
+  <td><%= entry.address %></td>
+  <td><%= entry.phone %></td>
+  <td><%= entry.email %></td>
+  <td><%= link_to 'Show', entry %></td>
+  <td><%= link_to 'Edit', edit_entry_path(entry), :remote => true %></td>
+  <td><%= link_to 'Destroy', entry, :confirm => 'Are you sure?', :method => :delete, :remote => true %></td>
+</tr>

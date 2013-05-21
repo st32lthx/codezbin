@@ -1,0 +1,24 @@
+<h1>Listing entries</h1>
+
+<table id="entries">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <%= render entry %>  
+<% end %>
+</table>
+
+<br />
+
+<h2>Entry form</h2>
+<div id="form">
+  <%= render :partial => "form" %>
+</div>
