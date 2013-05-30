@@ -1,3 +1,5 @@
+# author: Amin Meyghani
+# May 29, 2013
 #-------------------------------#
 require_relative 'require_all.rb'
 #-------------------------------#
