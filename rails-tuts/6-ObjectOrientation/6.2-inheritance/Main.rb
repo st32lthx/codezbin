@@ -1,5 +1,6 @@
 # author: Amin Meyghani
 # May 29, 2013
+# Simple demonstration of inheritance in Ruby
 #-------------------------------#
 require_relative 'require_all.rb'
 #-------------------------------#
