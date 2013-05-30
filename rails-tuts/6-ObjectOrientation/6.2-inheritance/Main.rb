@@ -2,6 +2,9 @@
 # May 29, 2013
 # Simple demonstration of inheritance in Ruby
 # The User class is the super class and the AdminClass is the subclass.
+# The super method is used to avoid repeating the methods that are provided in the super class.
+# The super method is used in the subclass and can be used inside any method definitions including the 
+# initialize method.
 #-------------------------------#
 require_relative 'require_all.rb'
 #-------------------------------#
