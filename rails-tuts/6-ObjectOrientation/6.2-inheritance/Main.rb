@@ -1,6 +1,7 @@
 # author: Amin Meyghani
 # May 29, 2013
 # Simple demonstration of inheritance in Ruby
+# The User class is the super class and the AdminClass is the subclass.
 #-------------------------------#
 require_relative 'require_all.rb'
 #-------------------------------#
