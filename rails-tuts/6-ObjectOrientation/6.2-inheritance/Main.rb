@@ -5,6 +5,7 @@
 # The super method is used to avoid repeating the methods that are provided in the super class.
 # The super method is used in the subclass and can be used inside any method definitions including the 
 # initialize method.
+# Inheritance is used to avoid redundant code, use common features, acquire functionality and extensions.
 #-------------------------------#
 require_relative 'require_all.rb'
 #-------------------------------#
