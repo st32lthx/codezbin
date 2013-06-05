@@ -26,3 +26,7 @@
 
 	rake db:migrate
 	
+## Create controller and the index action ##
+
+	rails g controller players index
+	
