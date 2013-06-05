@@ -16,7 +16,8 @@
 
 ### possible datatypes for ActiveReccord Rails 3
 
-[Docs Reference](Docs Reference)
+[Docs Reference](http://guides.rubyonrails.org/migrations.html#supported-types
+)
 	
 	:primary_key  
 	:string	:text    :integer	:float	:decimal	:datetime          	:timestamp	:time              	:date	:binary            
