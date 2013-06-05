@@ -31,3 +31,20 @@
 
 	rails g controller players index
 	
+## adding entry to database using the Query Interface ##
+
+	# runs the rails console in development
+	rails c
+	# Create method makes a new object and saves it to the database.
+	Player.create(name:"Jon", health:100, is_dead:0)
+	
+## looping through the entries in the array in the index view##
+
+	<% @players.each do |player| %>
+	
+		<%= player.name %>
+		<%= player.health %>
+		<%= player.is_dead %>		
+		
+	<%end$>
+	
