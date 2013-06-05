@@ -46,5 +46,5 @@
 		<%= player.health %>
 		<%= player.is_dead %>		
 		
-	<%end$>
+	<%end%>
 	
