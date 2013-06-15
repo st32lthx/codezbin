@@ -7,6 +7,10 @@ And then you can run the executeable:
 
 	./hello
 	
+More detailed, more verbose:
+
+	g++ -O3 -march=native -W -Wall  -Wextra -pedantic -std=c++0x -o hello Main.cpp src/*.cpp src/*.h
+	
 For information on make files look at the following:
 
 [Stackoverflow](http://stackoverflow.com/questions/14884474/how-to-link-object-files-and-libraries-without-using-makefile)
