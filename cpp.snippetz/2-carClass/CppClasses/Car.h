@@ -1,17 +1,18 @@
 /**
- * Car prototype
+ * Simple car prototype
  * Author: Amin Meyghani
- * Sample of a simple class with getters and setters.
+ * Date: Jun 15, 2013
+ * Version: 1.0  
  */
 #ifndef __CppClasses__Car__
 #define __CppClasses__Car__
 
 #include <iostream>
 
-class Car{
-private:
-	int _gas;
-public:
+ class Car{
+ private:
+ 	int _gas;
+ public:
 	/*
 	Constructors
 	 */

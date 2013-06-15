@@ -1,4 +1,9 @@
-
+/**
+ * The implementation of the car class.
+ * Author: Amin Meyghani
+ * Date: Jun 15, 2013
+ * Version: 1.0
+ */
 #include "Car.h"
 
 /*
