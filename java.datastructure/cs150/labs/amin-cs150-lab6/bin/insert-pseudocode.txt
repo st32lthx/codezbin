@@ -1,0 +1,4 @@
+insertAfter method:
+
+make the next pointer of the new node point to the next pointer of the before node.
+make the before node's next pointer to point to new node.

@@ -1,0 +1,11 @@
+public class ScannerTest
+{
+public static void main(String[] args)
+{
+
+GetName myGetName = new GetName();
+String x = myGetName.getName();
+System.out.println("your name is " + x);
+
+}
+}

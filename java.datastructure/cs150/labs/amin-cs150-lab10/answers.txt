@@ -1,0 +1,6 @@
+amin-cs150-lab10-answers
+
+The sort takes O(n*log[n]) time. 
+
+The first "for loop" inside priorityQueueSort method runs at O(n) time in its worst case, because it has to go through all the elements. Moreover, the remove() method calls delete root() method from heap class and heapify() will be called as result. Since a heap is complete tree, in the worst case, the running time of heapify() will O(log [n]). Therefore, overall the runtime is O(n*log[n]).
+

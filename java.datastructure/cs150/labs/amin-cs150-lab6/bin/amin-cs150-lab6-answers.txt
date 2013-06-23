@@ -1,0 +1,17 @@
+Amin-cs-150-lab6-answers:
+
+1 - The worst-case is when  the findPosition method has to go through all the pointers in order to find the position of the new node 
+ at the very end of the linkedList. This depends on the number of current nodes and if there are n nodes, this method has to go through 
+n nodes. Therefore, it is a linear process, O(n).
+
+The worst-case running time for insertAfter method is O(1). The reason is that this method does not depend on the all of the nodes in the
+ linkedList but only one. Therefore, when the method is called, it always updates same number of pointers. Therefore, it is a constant process.
+
+2 – The worst-case is when the method has to go through all the elements in the array. If there are n element s in the array, the method 
+has to do it n times. Therefore, it will be linear process, O(n). Similarly, the insert method in an array would be linear for same reason as above.
+
+3) A linkedList would be better to implement using a linear search method for all the events in the beginning. This is because  the 
+search method can go through all the beginning events very easily and efficiently.
+
+4) An array would be better to implement. The reason is that the boss can access each event by knowing the index of the array. 
+For example to know the last event, he can simply access the last index of the array without going  through all the elements in the array. 

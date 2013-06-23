@@ -1,0 +1,36 @@
+Amin-cs-150-project3
+
+Changes made to the card and deck class:
+
+
+DECK CLASS: The only changes made was that the new deck class can now accept an argument ("num") and make deck of cards based on that.
+**************************************************
+
+
+public Deck(int num)
+		{
+			deckTracker = 0;
+			cardDeck = new Card[num*52];
+			this.makeDeckOfCards(num);
+		}	
+**************************************************
+				private void makeDeckOfCards(int num)
+		{
+			for(int j = 0; j < num; j++)
+			{
+				for (int i=0; i<13; i++)
+				{
+					for(int k=0;k<4;k++)
+					{
+					Card card = new Card(i+1 ,k);
+					cardDeck[(i + (13 * k)) + (j*52)]=card;
+					}
+				}
+			}
+		}
+**************************************************
+**************************************************
+CARD CLASS: The changes made were that the names of the card values  were replaced by number strings.
+**************************************************	
+			private  static String[] cardSuit =  {"clubs", "diamonds", "hearts", "spades"};
+			private  static String[] cardValue = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"};
