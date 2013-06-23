@@ -1,6 +1,8 @@
-# Compiling the c++11 program #
+##3-pointers##
 
-To compile the program do:
+Demonstrates the usage of pointers.
+
+## To compile the program do: ##
 
 	g++ -std=c++0x -o SomeName main.cpp
 
