@@ -1,0 +1,14 @@
+Amin-cs150-lab7-reflection
+
+1) The methods setStart and setEnd are specific to the event class. If these two events 
+   were placed in the interface, then the other class (reminder) would also implement these two methods.
+   However, the reminder class for example does not have a way to refer to the variables start time and end time
+   for certain events. The variables that the reminder class knows of are the month, day and year. In conclusion,
+   it is more logical to place these two methods in the event class rather than the interface. 
+
+2) This is not a good design because the reminder class, which implements the interface has to have
+   the two variables startTime and endTime. Moreover, because of the behavior of this class (reminding 
+   the year, month and day) it is not logical to place the setStart and setEnd in the reminder class.
+
+3) It was necessary to use casting. The casting was done to tell the java compiler that LogEntry can be an Event.
+   As a result, the compiler did not send an error.

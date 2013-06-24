@@ -1,0 +1,18 @@
+findPosition method:
+
+ // find the appropriate pointer depending 
+on the time/date of the new event
+  that is going to be added.
+
+if the new event that is going to 
+be added,is latest compared to the other
+ones, make the runner go all the way to the end
+ until it hits null and the new event will be added to the end (insertAtTail)
+
+then grab that pointer and used it to point to 
+the new event that 
+is going to be added.
+
+
+
+

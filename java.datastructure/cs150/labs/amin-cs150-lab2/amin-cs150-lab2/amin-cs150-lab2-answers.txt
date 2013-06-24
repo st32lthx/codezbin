@@ -1,0 +1,80 @@
+//Answers.txt
+
+1)What does each line do?
+
+DrawingBox myBoard; 
+
+This line declares a variable "myBoard" from the "DrawingBox" class.
+When we declare the variable, a small memory location is dedicated to store other memory addresses. 
+At this stage the memory diagram looks like the following:
+
+	   ______
+	   |    |
+myBoard:   |    |------
+ 	   ------      |
+		       |
+		      ___ Null
+		       -
+
+myBoard = new DrawingBox();
+
+This line crates an object from the "DrawingBox" class. The empty memory location in the previous line, is now
+pointing to the location where the object's properties are defined. The memory at this stage looks like the following:
+
+
+
+
+
+	   ______        _________
+	   |    | new()  |    	 |		
+myBoard:   |    |--------|-------|
+ 	   ------        |	 |
+			 |-------|
+			 |	 |
+			 |-------|
+			 |	 |
+			 |_______|
+		       
+ 
+myBoard.setVisible(true);		      
+This line defines one of the predefined properties of the DrawingBox object. 
+At this stage the memory diagram looks like the following:
+ 	
+	   ______        ______________
+	   |    | new()  |  visibility |		
+myBoard:   |    |--------|-------------|
+ 	   ------        |	       |
+			 |-------------|
+			 |	       |
+			 |-------------|
+			 |	       | 
+			 |_____________|
+
+myBoard.drawRect(320,230,120,180);
+
+This lines calls the method "drawRect" from the DrawingBox class on "myBoard" object. At this stage the pointer is pointing 
+to another location in the memory in order to create the drawing frame.
+
+
+
+
+
+
+
+2) 
+
+By looking at the API docs we can see that the constructors are well defined in the documentation. 
+According to the documentaion it can either accept a strng or an empty constructor.	
+
+3)
+
+We can distinguish between the two methods by looking at the documentatin. Among the two, only one of them accepts four parameters.
+The parameters are:
+x: Defines the x-coordinate of the rectabgle
+y: Defines the y-coordinate of the rectangle
+width: Defines the width of the rectangle
+height: Defines the height of the rectangle.     	   
+
+
+4) The other parts of the lab has been documented in another class  called "RectangleNoIntersect.java". This class shows how we can call another method such as the "translate" method in order to
+set the rectangles far apart from each other so that they won't intersect.    

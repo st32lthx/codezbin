@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+//----------------------------------------------------------------
+public class ArrayListToPutCardObjectsIn {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Object> myList = new ArrayList<Object>();
+		
+		for (int i = 0; i < 13; i++) {
+			for (int j = 0; j < 4; j++) {
+				Card card = new Card(i + 1, j);
+				myList.add(card);
+			}
+		}
+//----------------------------------------------------------------
+		for (int k = 0; k < 52; k++) {
+			System.out.println(myList.get(k).toString());
+		}
+
+	}
+//----------------------------------------------------------------
+}

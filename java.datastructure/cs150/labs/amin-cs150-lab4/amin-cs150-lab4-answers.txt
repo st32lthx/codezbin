@@ -1,0 +1,39 @@
+amin-cs-150-lab4 Answers:
+
+1) We used "protected" modifier for the distance variable because we wanted this variable to be accessed to the whole package. Having said that, we considered
+using this variable only for the subclasses not for all of the classes within package for the purpose of good modularity. 
+We used "private" modifier for the "label" variable, because we wanted it to be only accessible by "Vehicle" class only.
+
+2)The variable "gas" is more specific to the "Car" class not all the vehicles. All vehicles might not necessary  have the "gas" property. There might be 
+some vehicles that do not "function" with "gas". Therefore, the variable "gas" should be included in the "Car" class that monitors only the gas in the car only.
+
+3)The method "idle()" is private because it is specific to the "Car" class and therefore, cannot be accessed by other classes. The assumption is that 
+each class would have their own "idle()" method that is specific to that particular class.
+
+
+-----------------------------------
+4) public Car(String newLabel) {  | The "super()" method was the constructor and the argument passed in was the same as the argument in the constructor of the parent's class.
+   	super(newLabel);          | The order is important. "super(newLabel)" must be called first.
+   	gas=15;                   |
+   	}                         |
+-----------------------------------
+
+5) The "move()" method should be abstract because each subclass of "Vehicle" has their own "move()" method and also because we made the "Vehicle" class
+abstract the "Vehicle" class only contains a "blueprint" of all the "move()" methods and does not actually contain the "move()" method.
+
+6) Example in Race.java:
+--------------------------
+                          |
+racers[k].drawDistance(); |The "drawDistance()" is a method inherited from the "Vehicle" class.
+                          |
+--------------------------
+
+
+7) Example in Race.java:
+
+-------------------------------------
+for (int j=0; j<numVehicles; j++) { |
+                racers[j].move();   | The "move()" method is an example of polymorphism. The method is called from the intended subclass not actually from 
+            }                       | the "Vehicle" class. The "Vehicle" class only contains a reference of the method that is abstract.
+-------------------------------------
+

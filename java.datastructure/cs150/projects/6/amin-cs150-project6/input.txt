@@ -1,0 +1,3 @@
+A^B*C-D/E+F*D;
+A/B^C+D*E/F^G-H*i;
+((A/(B^C))+((D*E)/(F^G))-(H*i));
