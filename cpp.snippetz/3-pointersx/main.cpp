@@ -5,7 +5,7 @@ Passing by pointer, the value is manipulated directly. - method (1)
 */
 void manipulate ( int *input){
 
-    *input +=1;
+    input[0] +=1;
 }
 
 /*
@@ -44,12 +44,13 @@ int main() {
 
 
     printf("-------Functions and Pointers (1)----------- \n");
-    int input = 10;
-    cout << input << ": value before being manipulated" << endl;
-/*   manipulate needs the address of varaible */
-    manipulate(&input);
-    cout << input << ": value AFTER being manipulated" << endl;
+    int *input = (int *)malloc(sizeof(int));
 
+    cout << input[0] << ": value before being manipulated" << endl;
+/*   manipulate needs the address of varaible */
+    manipulate(input);
+    cout << input[0] << ": value AFTER being manipulated" << endl;
+    free(input);
 
     printf("-------Functions and Pointers (2)----------- \n");
     int input2 = 20;
