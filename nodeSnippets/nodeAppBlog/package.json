@@ -1,0 +1,12 @@
+{
+    "name": "naive",
+    "description": "A package using naive versioning",
+    "author": "Amin Meyghani",
+    "dependencies": {
+        "jquery": ">= 1.2.0",
+        "angular": "= 0.0.4",
+        "express": "2.5.10",
+        "jade": ">= 0.0.1"
+    },
+    "engine": "node 0.4.1"
+}
