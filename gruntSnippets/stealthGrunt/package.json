@@ -1,0 +1,10 @@
+{
+    "name": "StealthGrunt",
+    "description": "Experiment with Grunt",
+    "author": "Amin Meyghani",
+    "dependencies": {
+        "grunt" : "~0.4.1",
+        "grunt-contrib-compress" : "~0.5.2"
+    },
+    "engine": "node 0.4.1"
+}
