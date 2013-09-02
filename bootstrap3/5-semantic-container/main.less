@@ -1,0 +1,37 @@
+@import "less/bootstrap";
+section {
+  .make-row();
+}
+.left-navigation {
+  .make-lg-column(3);
+}
+.main-content {
+  .make-lg-column(9);
+}
+.highlight{
+  .well;
+}
+/*source: http://tinyurl.com/less-query */
+.make-container(@min-width) {
+  @media (min-width: @min-width) {
+    .page-maker(@max-width) {
+      .page {
+        max-width: @max-width;
+        .container-fixed();
+      }
+    }
+    .make-page-style() when (@min-width=@screen-lg-min) {
+      .page-maker(@container-lg);
+    }
+    .make-page-style() when (@min-width=@screen-md) {
+      .page-maker(@container-md);
+    }
+    .make-page-style() when (@min-width=@screen-sm) {
+      .page-maker(@container-sm);
+    }
+    .make-page-style();
+  }
+}
+.make-container(@screen-sm);
+.make-container(@screen-md);
+.make-container(@screen-lg-min);
