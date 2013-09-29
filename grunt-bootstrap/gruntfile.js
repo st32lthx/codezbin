@@ -53,12 +53,14 @@ module.exports = function (grunt) {
         uglify: {
             all: {
                 files: {
-                    "dist/js/bootstrap.min.js": ["dist/js/bootstrap.js"],
-                    "dist/js/app.min.js":["dist/js/app.js"],
+                    // "dist/js/bootstrap.min.js": ["dist/js/bootstrap.js"],
+                    "dist/js/app.min.js":["dist/js/app.js"]/*,*/
                     /* production libs */
+                    /*
                     "dist/js/jquery-1.10.2.min.js":["dev/js/vendor/jquery/jquery-1.10.2.js"],
                     "dist/js/jquery-2.0.3.min.js":["dev/js/vendor/jquery/jquery-2.0.3.js"],
                     "dist/js/jquery-migrate-1.2.1.min.js":["dev/js/vendor/jquery/jquery-migrate-1.2.1.js"]
+                    */
                 }
             }
         },
@@ -69,6 +71,14 @@ module.exports = function (grunt) {
                 base: '.',
                 keepalive: true
               }
+            }
+          },
+          link_html: {
+            html: {
+              jsFiles: ['dist/js/app.js'],
+              cssFiles: ['dist/css/app.css'],
+              targetHtml: ['index.html'],
+              
             }
           },
 
@@ -96,8 +106,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-link-html');
 
     // Default task(s)
-    grunt.registerTask('default', ["clean:all", "less", "cssmin", "concat", "uglify"]);
+    grunt.registerTask('default', ["clean:all", "less", "cssmin", "concat", "uglify","link_html"]);
 
 };
