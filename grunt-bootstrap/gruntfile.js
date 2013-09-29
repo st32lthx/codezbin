@@ -10,7 +10,7 @@ module.exports = function (grunt) {
         // Clean files and folders
         clean: {
             all: {
-                src: ["dist/css/app.css.min","dist/js/boot-app.min.js"]
+                src: ["dist/css/app.min.css","dist/js/app.min.js","dist/**/*.css","dist/**/*.js"]
             }
         },
 
