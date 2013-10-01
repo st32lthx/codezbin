@@ -109,6 +109,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-link-html');
 
     // Default task(s)
+    // TODO:
+    // the clean all module removes files and folders, will add later
     grunt.registerTask('default', [/*"clean:all", */"less", "cssmin", "concat", "uglify","link_html"]);
 
 };
