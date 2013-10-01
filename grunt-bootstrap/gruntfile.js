@@ -50,7 +50,8 @@ module.exports = function (grunt) {
             dest: 'dev/js/app/app.js',
           },
           extras: {
-            src: ['dev/js/vendor/bootstrap/src/*.js'],
+            //TODO: fix the issue of ordering bootstrap files to compile or concat them in order
+            src: ['dev/js/vendor/bootstrap/src/modal.js','dev/js/vendor/bootstrap/src/tooltip.js'],
             dest: 'dev/js/vendor/bootstrap/bootstrap.js',
           },
         },
