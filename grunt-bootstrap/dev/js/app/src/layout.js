@@ -1,2 +1,0 @@
-/* Layout */
-console.log("layout");
