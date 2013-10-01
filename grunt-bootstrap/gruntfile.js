@@ -113,6 +113,7 @@ module.exports = function (grunt) {
     // the clean all module removes files and folders, will add later
     // I still dont know what a good usage is for deleteing files and folders using this module ...
     // for more info: https://github.com/gruntjs/grunt-contrib-clean
+    // This is a good project but still i am not sure where i can use it. ...
     grunt.registerTask('default', [/*"clean:all", */"less", "cssmin", "concat", "uglify","link_html"]);
 
 };
