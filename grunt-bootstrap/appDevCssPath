@@ -5942,3 +5942,4 @@ td.visible-print {
     display: none !important;
   }
 }
+/* app-general *//* app layout *//* app-ui */

@@ -1,4 +1,5 @@
 'use strict';
+//TODO: use variables for paths
 
 module.exports = function (grunt) {
 
@@ -20,10 +21,11 @@ module.exports = function (grunt) {
                 /*
                 options: {
                     yuicompress: true,
+                    //TODO: need to add the fonts.
                     paths: ["less", "less/font-awesome"]
                 },*/
                 files: {
-                    "dist/css/app.css": "dev/css-less/app/app.less"
+                    "dev/css-less/app/app.css": "dev/css-less/app/app.less"
                 }
             }
         },
@@ -32,20 +34,24 @@ module.exports = function (grunt) {
         cssmin: {
             compress: {
                 files: {
-                    "dist/css/app.min.css": ["dist/css/app.css"]
+                    "dist/css/app.min.css": ["dev/css-less/app/app.css"]
                 }
             }
         },
 
         // Concatenate JavaScript files
+        // TODO: how to a better concat? for example:
+        // concat bootstrap files -> bootstrap.js
+        // concat angular files -> angular.js
+        // concat app files -> app.js 
         concat: {
           basic: {
-            src: ['dev/js/app/*.js'],
-            dest: 'dist/js/app.js',
+            src: ['dev/js/app/src/*.js'],
+            dest: 'dev/js/app/app.js',
           },
           extras: {
-            src: ['dev/js/vendor/bootstrap/*.js'],
-            dest: 'dist/js/bootstrap.js',
+            src: ['dev/js/vendor/bootstrap/src/*.js'],
+            dest: 'dev/js/vendor/bootstrap/bootstrap.js',
           },
         },
 
@@ -53,8 +59,8 @@ module.exports = function (grunt) {
         uglify: {
             all: {
                 files: {
-                    // "dist/js/bootstrap.min.js": ["dist/js/bootstrap.js"],
-                    "dist/js/app.min.js":["dist/js/app.js"]/*,*/
+                    "dist/js/bootstrap.min.js": ["dev/js/vendor/bootstrap/bootstrap.js"],
+                    "dist/js/app.min.js":["dev/js/app/app.js"]/*,*/
                     /* production libs */
                     /*
                     "dist/js/jquery-1.10.2.min.js":["dev/js/vendor/jquery/jquery-1.10.2.js"],
@@ -75,8 +81,10 @@ module.exports = function (grunt) {
           },
           link_html: {
             html: {
-              jsFiles: ['dist/js/app.js'],
-              cssFiles: ['dist/css/app.css'],
+              /*TODO: Add another configuration for produciton */
+              jsFiles: ['dev/js/vendor/jquery/jquery-2.0.3.js','dev/js/vendor/bootstrap/bootstrap.js','dev/js/app/app.js'],
+              /*TODO: Add another configuration for produciton */
+              cssFiles: ['dev/css-less/app/app.css'],
               targetHtml: ['index.html'],
               
             }
