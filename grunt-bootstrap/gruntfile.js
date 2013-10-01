@@ -109,6 +109,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-link-html');
 
     // Default task(s)
-    grunt.registerTask('default', ["clean:all", "less", "cssmin", "concat", "uglify","link_html"]);
+    grunt.registerTask('default', [/*"clean:all", */"less", "cssmin", "concat", "uglify","link_html"]);
 
 };
