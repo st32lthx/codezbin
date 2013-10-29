@@ -122,6 +122,6 @@ module.exports = function (grunt) {
     // the clean all module removes files and folders, will add later
     // not sure how i can use it yet, do u know ?
     // for more info: https://github.com/gruntjs/grunt-contrib-clean
-    grunt.registerTask('default', [/*"clean:all", */"less", "cssmin", "concat", "uglify","link_html"]);
+    grunt.registerTask('default', ["link_html","less","cssmin"/*,"concat","uglify","clean:all"*/]);
 
 };
