@@ -1,0 +1,84 @@
+/********************  AM:  ****************************
+	Different media query options provided by Bootstrap 
+	breakpoint variables. These breakpoint variables
+	as of version 3.0.1 are:
+--------------------------------------------------------	
+	@screen-xs-min:              480px;
+	@screen-sm-min:              768px;
+	@screen-md-min:              992px;
+	@screen-lg-min:              1200;
+
+	@screen-xs-max:              (@screen-sm-min - 1);
+	@screen-sm-max:              (@screen-md-min - 1);
+	@screen-md-max:              (@screen-lg-min - 1);
+--------------------------------------------------------	
+
+** NOTE: ** Make sure that you are using the latest 
+version, otherwise, some of the variables are not 
+going to work because of the naming conventions. For example
+in the versions before 3.0.1, the variable @screen-xs-min
+was called @screen-xs. If you don't use the version after
+3.0.1, some of these variables are going to be undefined
+when trying to compile less.
+*******************************************************/
+
+
+/****************** AM ****************************
+ Option 1: Direct control over regions 
+**************************************************/
+// Large Screens and wider ( w > 1200)
+@media (min-width: @screen-lg-min) { 
+}
+ // Between medium and large sized screens ( 992px < w < 1119px  )
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
+}
+ // Between small and medium sized screens: ( 768  < w < 991px )
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+}
+ // smaller than small screens, in the extra small region: ( w < 767 px)
+@media (max-width: @screen-xs-max) { 
+}
+
+/****************** AM ****************************
+Option 2: Relative control over regions using min-width 
+**************************************************/
+/* Extra small devices (phones, less than 768px) */
+/* By default, the page is treated for extra small screens 
+where w < 767 (i.e 768 - 1 px )
+
+/* Small devices : w > 768px */
+@media (min-width: @screen-sm-min) { 
+
+}
+
+/* Medium devices : w > 992px */
+@media (min-width: @screen-md-min) { 
+
+}
+
+/* Large devices : w > 1200px ) */
+@media (min-width: @screen-lg-min) { 
+
+}
+/****************** AM ****************************
+	 Option 3: Similar to option 2, but using max-width
+**************************************************/
+/* extra small devices: w < 480px */
+@media (max-width: @screen-xs-min) { 
+	// This is by default, dont need media query
+	// provided that you structure your design
+	// based on the mobile first ideaology.
+}
+
+/* Small devices : w < 767x */
+@media (max-width: @screen-xs-max) { 
+
+}
+/* Small devices : w < 991px */
+@media (max-width: @screen-sm-max) { 
+
+}
+/* Medium devices : w < 1119px */
+@media (max-width: @screen-md-max) { 
+
+}
