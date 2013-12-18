@@ -1,0 +1,161 @@
+/*!
+********************************
+ * QUOVO MVP 0.1
+ *
+ * Copyright 2013 QUOVO
+ *******************************
+ *!
+ */
+/********************  AM:  ****************************
+	COLORS
+--------------------------------------------------------
+	NOTES: Color variables including bootstrap overrides
+*******************************************************/
+
+//AM: Quovo Colors
+@quovo-white:                                  #fff;
+@quovo-black:                                  #000;
+@quovo-light-black:                            #666;
+@quovo-blue:                                #005BA7;
+@quovo-dim-blue:                            #afdefe;
+@quovo-nav-blue:                            #1A6DC4;
+@quovo-dark-blue:                           #081348;
+@quovo-light-blue:                          #96BDD9;
+@quovo-light-light-blue:                    #7FAECE;
+@quovo-sky-blue: 														#E3F3FF;
+@quovo-progress-blue:                       #BFD6E6;
+
+@quovo-link-blue:                           #1B6DC4;
+@quovo-green:                               #37a202;
+@quovo-light-green:                         #82d956;
+@quovo-purple:                              #9B208A;
+@quovo-light-purple:                       lighten(@quovo-purple, 13.5%);
+@quovo-light-light-purple:                  #DCE9F6; //also for tags bg color
+@quovo-dim-purple:                          #8E97AC;
+@quovo-red:                                 #ff3333;
+@quovo-light-red:                           #ff8787;
+@quovo-orange:                              #FF6826;
+@quovo-gray:                                #a4a4a4;
+@quovo-light-gray:                          #e5e6e7;
+@quovo-light-light-gray:                    #f6f6f6;
+@quovo-faint-gray:                          #f0f0f0;
+@quovo-dark-gray:                           #494a50;
+@quovo-med-gray:                            #999999;
+@quovo-dim-gray:                            #252525;
+@quovo-pink:                                #CA94C0;
+@quovo-invalid:                             #FF9999;
+
+@quovo-red-transparent:                     #E18D98;
+@quovo-green-transparent:                   #7FC9A7;
+
+@quovo-red-break: #BE4050;
+@quovo-green-break: #3f8967;
+
+@shock-red:																	#E18C97;
+@shock-red-dark:														#d35464;
+
+//AM: Macro Dashboard Colors
+@macro-blue: 																#007A8F;
+@macro-mid-blue: 														#C5E1E7;
+@macro-light-blue: 													#E2F2F7;
+@macro-green: 															#006B53;
+@macro-light-green: 												#86AFA6;
+@macro-nav-color: 													#00BCC8;
+@macro-text-light-blue: 										#88BDC5;
+@macro-purple: 															#97288A;
+
+
+
+
+
+//AM: Bootstrap overriden colors
+@brand-primary:                      @quovo-nav-blue;
+@table-bg-active:            @quovo-light-light-gray;
+@brand-chartblue:                            #a5c4ea;
+@brand-macro-blue: 													@macro-light-blue;
+
+
+
+//AM: Chart colors
+//note that these colors are hard-coded into some charts -- in particular the allocation pie
+@chart-blue:																#4e86cf;
+@chart-blue-light:													#a5c4ea;
+@chart-blue-dark:														#4e86cf;
+@chart-red:																	#cf6c65;
+@chart-red-dark:														#9f271f;
+@chart-red-light:														#f5a9a3;
+@chart-light-gray:													#ebebeb;
+@chart-green:																#9bd744;
+@chart-green-light:													#c4f380;
+
+/********************  AM:  ****************************
+	GENERAL Elements
+--------------------------------------------------------
+	NOTES: body, rules, panels, buttons
+*******************************************************/
+//AM: Resets the buttons border radius.
+@button-border-radius:                            0;
+//AM: Buttons color
+
+@btn-chartblue-color:                 #fff;
+@btn-chartblue-bg:                    @brand-chartblue;
+@btn-chartblue-border:                darken(@btn-chartblue-bg, 5%);
+
+
+
+//AM: body and hr
+@body-padding:                                    0;
+@hr-margin:                                       0;
+@wells-border-radius:                             0;
+@wells-border-color:              @quovo-light-gray;
+@well-content-radius:                           2px;
+//AM: bootstrap override for panel border radius
+@panel-border-radius:                             0;
+
+//AM: margin between columns.
+@grid-gutter-width:                             0px;
+
+//AM: Resets Border radius values
+@border-radius-base:														  0;/* was 4px;*/
+@border-radius-large:														  0;/* was 6px */
+@border-radius-small:														  0;/* was 3px */
+
+//AM: Bootstrap tooltip
+@tip-max-width:																150px;
+
+//AM:  Bootstrap jumbotron.
+@jumbotron-bg:              @quovo-light-light-gray;
+@jumbotron-padding:															  0;
+
+/********************  AM:  ****************************
+	FONTS
+--------------------------------------------------------
+	NOTES: Variables and overrides for FONTS
+*******************************************************/
+//AM: Font sizes
+@base-font-size:                                14;
+@fs-1:																				10px;
+@fs-2:																				12px;
+@fs-3:																				14px;
+@fs-4:																				16px;
+@fs-5:																				20px;
+@fs-6:																				24px;
+@fs-7:																				28px;
+@fs-8:																				38px;
+
+//AM: Font Families
+@qfont1: 'futura-pt',Verdana, sans-serif; //'ff-din-web'
+@qfont2: 'futura-pt',Verdana, sans-serif;
+@font-family-sans-serif:  @qfont1;
+@font-family-serif:       @qfont1;
+@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+//AM: font icon paths
+// MGD not safe to use CDN for fonts because bootstrap changes the LESS content id when they change the fonts,
+// but we use content ids taken from our cached copy of boostrap.  TODO could try to find a CDN for bootstrap's LESS
+// files (so far no luck) or could push downloading the latest less and building from that into the grunt process.
+@icon-font-path:          "/lib/bootstrap3.0.2/fonts/";//netdna.bootstrapcdn.com/bootstrap/3.0.2/fonts/";
+@icon-font-name:          "glyphicons-halflings-regular";
+
+//AM: Animation
+@animation-time:																200ms;

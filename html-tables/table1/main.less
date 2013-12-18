@@ -1,0 +1,122 @@
+@import "variables";
+@import "qvars";
+body{
+    margin:0;
+}
+.wrapper{
+    width: 70%;
+    margin:0 auto;
+}
+
+.qtable{
+    width:100%;
+    th{
+        // background-color: @table-bg-active;
+        padding-top:10px;
+        padding-bottom:10px;
+        height:20px;
+        position: relative;
+        text-align: right;
+    }
+    th .label-holder{
+    //WLP: necessary extra div for firefox
+    //compatibility of sorters
+    position:relative;
+    padding-right:22px;
+}
+th:first-child{
+    padding-left:10px;
+    min-width: 1px;
+        // width: 1px;
+        text-align:left;
+    }
+    th .subhead{
+        font-size: @fs-2;
+        display: block;
+    }
+    th .sorter {
+        display:block;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        margin-top: -5px;
+        font-size: @fs-1;
+        color: @quovo-blue;
+        margin-right:5px;
+    }
+    th:first-child .sorter {
+        left: 60px;
+    }
+    td{
+        text-align: right;
+        padding: 10px 8px;
+        white-space: nowrap;
+    }
+    td:first-child, th:first-child{
+        text-align: left;
+    }
+    th div.sorter {
+        padding-right:20px;
+    }
+    @media (min-width: @screen-xs-max) {
+        th,td{
+            word-wrap: break-word;
+            white-space: normal;
+        }
+    }
+    //AM: tablet specific styles for the my securities
+    // table on the dashboard.
+    @media (max-width: @screen-sm-max) {
+        th .label-holder{
+            padding-right:19px;
+        }
+        th,td,tr{
+            font-size: @fs-1;
+        }
+        th:first-child span.sorter{
+            left:54px;
+        }
+    }
+}
+.qtable-normal-whitespace{
+    td{
+        white-space: normal;
+    }
+}
+.qtable-bordered{
+    tbody tr{
+        border-bottom: 1px solid @quovo-light-gray;
+    }
+}
+.qtable-fixed{
+    table-layout: fixed;
+}
+
+.table-view-title{
+    font-size: @fs-5;
+    @media(max-width: @screen-xs-max){
+        font-size: @fs-3;
+    }
+}
+.table-view-subtitle{
+    font-size: @fs-3;
+    @media(max-width: @screen-xs-max){
+        font-size: @fs-2;
+    }
+}
+/* &&&&&&&&&&&&&&&&  AM:TODO  &&&&&&&&&&&&&&&&&
+    TODO this has to go away
+    /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+    .table-view-header th:last-child{
+        padding-right: 20px;
+    }
+// AM: first for width when the collapsing
+.table-view-data{
+    width: 2%;
+}
+.table-view.first-data{
+    width: 10%;
+    @media(max-width: @screen-md){
+        width: 13%;
+    }
+}
